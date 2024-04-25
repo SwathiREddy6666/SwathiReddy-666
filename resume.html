@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #8A6D67; /* lighter shade */
+            --primary-color-dark: #dab3b5; /* darker shade */
+            --secondary-color: #8A6D67; /* lighter shade */
+            --text-dark: black;
+            --text-light: #6b7280;
+            --extra-light: white;
+            --project-color: #dab3b5; /* Color for projects */
+        }
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--extra-light);
+            color: var(--text-dark);
+            overflow-x: hidden;  /* Hide horizontal scrollbar */
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: var(--extra-light);
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-light);
+        }
+
+        /* About Me Section */
+        section {
+            background-color: var(--extra-light);
+            padding: 4rem 0;
+            overflow-x: hidden;  /* Hide horizontal scrollbar */
+        }
+
+        section .container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            white-space: nowrap;
+            margin-top: 20px;
+        }
+
+        .description {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+            white-space: nowrap;
+            margin-top: 5px;
+        }
+
+        .profile {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            white-space: normal;
+        }
+
+        .skills {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: var(--primary-color);
+            color: var(--extra-light);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill:hover {
+            background-color: var(--primary-color-dark);
+        }
+
+        .languages {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: var(--project-color); /* Changed color to match project color */
+            text-align: left;
+        }
+
+        .languages p {
+            margin-top: 10px;
+			color:black;
+			font-size:15px;
+        }
+
+        /* New Format */
+        .section-heading {
+            margin-top: 30px;
+            font-size: 1.7rem;
+            color: var(--secondary-color); /* Changed color to match project color */
+            text-align: left;
+        }
+
+        .section-content {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .section-content p {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="PROJECT.html">Home</a>
+        <a href="proabt.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section>
+        <div class="container">
+
+            <!-- "Profile" -->
+            <div class="description"></div>
+            <div class="name">PROFILE</div>
+
+            <!-- Profile Details -->
+            <div class="profile">
+                I am a qualified and professional web developer with five years of experience in databases and data analytics and website design. Strong creative and analytical skills. Team player with an eye for detail.
+            </div>
+
+            <!-- Skills -->
+            <div class="skills">
+                <div class="skill">Web Design</div>
+                <div class="skill">Design Thinking</div>
+                <div class="skill">Data Analytics</div>
+                <div class="skill">Front End Coding</div>
+                <div class="skill">Problem-Solving</div>
+                <div class="skill">Computer Literacy</div>
+                <div class="skill">Project Management Tools</div>
+                <div class="skill">Strong Communication</div>
+            </div>
+
+            <!-- Languages Known -->
+            <div class="languages">
+                <div class="description">Languages Known</div>
+                <p>English</p>
+                <p>Telugu</p>
+                <p>Hindi</p>
+				<p>Spanish</p>
+            </div>
+
+            <!-- Projects Done -->
+            <div class="section-heading">Projects Done</div>
+            <div class="section-content">
+                <p>WebProfile</p>
+                <p>Streamlined Ad-Serving Platform</p>
+                <p>Online Classroom Management</p>
+            </div>
+
+            <!-- Technical Certificates -->
+            <div class="section-heading">Technical Certificates</div>
+            <div class="section-content">
+                <p>Java Programing Certificate</p>
+                <p>Front End Coding Certificate</p>
+                <p>Project Management Certificate</p>
+				<p>Google Data Analytics Certificate</p>
+				<p>Certificate in Python programing</p>
+            </div>
+
+            <!-- Skills -->
+            <div class="section-heading">Skills</div>
+            <div class="section-content">
+                <p>Web Design</p>
+                <p>Design Thinking</p>
+                <p>Wireframe Creation</p>
+                <p>Front End Coding</p>
+                <p>Problem-Solving</p>
+                <p>Computer Literacy</p>
+                <p>Project Management Tools</p>
+                <p>Strong Communication</p>
+            </div>
+
+            <!-- Education -->
+            <div class="section-heading">Education</div>
+            <div class="section-content">
+                <p><strong>N St.Mathews Public High School</strong><br>2013-2019<br>Secondary School</p>
+                <p><strong>Vellore Institute of Technology</strong><br>2022 - 2026<br>Bachelor of Computer Scinece with specialization in IOT</p>
+            </div>
+
+            <!-- Experience -->
+            <div class="section-heading">Experience and Internships</div>
+            <div class="section-content">
+                <p><strong>Google Internship</strong><br>Beginner Data Analyst<br><br>Sure, here's a concise description suitable for a resume:
+
+Google Data Analyst Intern - Leveraged large datasets to extract insights, supporting data-driven decision-making. Collaborated with cross-functional teams to understand and address data requirements. Utilized SQL, Python, and Google Analytics for data manipulation and visualization. Assisted in creating dashboards and reports to communicate findings to stakeholders.</p>
+                
+            </div>
+
+            <!-- Contact -->
+            <div class="section-heading">Contact</div>
+            <div class="section-content">
+                <p>Reach me at:9494386839</p>
+                <p>Hyderabad, Ameerpet,DHFL building,3rd floor</p>
+                <p>Email me on:vsswathireddy@gmail.com</p>
+                <p><a href="http://reallygreatsite.com">reallygreatsite.com</a></p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

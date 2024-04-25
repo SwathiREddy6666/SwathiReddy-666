@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color:  #8A6D67;
+            --primary-color-dark: #9c6a6b;
+            --secondary-color: #94595a;
+            --text-dark: black;
+            --text-light: #6b7280;
+            --extra-light: white;
+        }
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--extra-light);
+            color: var(--text-dark);
+            overflow-x: hidden;  /* Hide horizontal scrollbar */
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: var(--extra-light);
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-light);
+        }
+
+        /* Portfolio Section */
+        section {
+            background-color: var(--extra-light);
+            padding: 4rem 0;
+            overflow-x: hidden;  /* Hide horizontal scrollbar */
+        }
+
+        section .container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .project-heading {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--secondary-color);
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        .project-content {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .project-content p {
+            margin-top: 10px;
+        }
+
+        .project-item {
+            background-color: var(--primary-color);
+            color: var(--extra-light);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .project-item:hover {
+            background-color:#dab3b5; 
+        }
+
+        /* Additional Styles */
+        .personal-statement {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 50px;
+            text-align: left;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="PROJECT.html">Home</a>
+        <a href="proabt.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section>
+        <div class="container">
+
+            <!-- Personal Statement -->
+            <div class="personal-statement">
+                Hello! I'm a passionate web developer with a strong background in data analytics. I love solving complex problems and creating meaningful solutions. Below are some of my featured projects.
+            </div>
+
+            <!-- Certifications -->
+            <div class="project-heading">Certifications</div>
+
+            <div class="project-content">
+                <div class="project-item">
+                    <h3>Google Data Analytics Certificate</h3>
+                    <p>Completed Google's Data Analytics Professional Certificate on Coursera.</p>
+                </div>
+				<div class="project-item">
+                    <h3>Certificate in Python Programming</h3>
+                    <p>Obtained a certificate in Python Programming from a recognized institution.</p>
+                </div>
+				<div class="project-item">
+                    <h3>Certificate in Java programming</h3>
+                    <p>Obtained a certificate in Java language Programming from the NPTEL.</p>
+                </div>
+				<div class="project-item">
+                    <h3>Certificate in Front End coding</h3>
+                    <p>Obtained a certificate in  Front End coding </p>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="project-heading">Featured Projects</div>
+
+            <div class="project-content">
+                <div class="project-item">
+                    <h3>WebProfile</h3>
+                    <p>A personal portfolio website showcasing my skills and experiences.</p>
+                </div>
+
+                <div class="project-item">
+                    <h3>Streamlined Ad-Serving Platform</h3>
+                    <p>Developed a platform to manage and serve ads efficiently.</p>
+                </div>
+
+                <div class="project-item">
+                    <h3>Data Analysis Dashboard</h3>
+                    <p>Created a dashboard using Python and SQL to visualize data analytics metrics.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

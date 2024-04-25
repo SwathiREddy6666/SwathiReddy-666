@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* CSS Variables */
+       :root {
+            --primary-color: #8A6D67; /* lighter shade */
+            --primary-color-dark: #dab3b5; /* darker shade */
+            --secondary-color: #8A6D67; /* lighter shade */
+            --text-dark: black;
+            --text-light: #6b7280;
+            --extra-light: white;
+        }
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace; /* Set font to Courier */
+        }
+
+        body {
+            background-color: var(--extra-light);
+            color: var(--text-dark);
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            text-align: center;
+            width: 100%; /* Full width */
+        }
+
+        nav a {
+            margin: 0 20px; /* Increased margin for spacing */
+            text-decoration: none;
+            color: var(--extra-light);
+            font-weight: bold;
+            font-size: 1.2rem; /* Increased font size */
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-light);
+        }
+
+        /* About Me Section */
+        section {
+            background-color: var(--extra-light);
+            padding: 4rem 0;
+        }
+
+        section .container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            color: var(--primary-color-dark);
+            font-weight: 600;
+            white-space: nowrap;
+            margin-top: 20px;
+        }
+
+        .description {
+            font-size: 2rem;
+            color:  var(--primary-color-dark);
+            font-weight: 500;
+            white-space: nowrap;
+            margin-top: 5px;
+        }
+
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+        }
+
+        .circle {
+            width: 330px; /* Slightly increased circle size */
+            height: 330px; /* Slightly increased circle size */
+            background-color: var(--primary-color-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .circle:hover {
+            transform: scale(1.05);
+        }
+
+     /* ... */
+
+p {
+    color:  var(--primary-color); /* Match the color of the circles */
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.circle p {
+    color: var(--extra-light); /* Text color inside the circles */
+}
+
+/* ... */
+
+
+        .tech-skills {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 30px;
+        }
+
+        .skills {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: var(--primary-color);
+            color: var(--extra-light);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill:hover {
+            background-color: var(--primary-color-dark);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="PROJECT.html">Home</a>
+        <a href="proabt.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfoli.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section>
+        <div class="container">
+
+            <!-- "It's Me" -->
+            <div class="description">It's Me</div>
+            <div class="name">Swathi Reddy</div>
+
+            <!-- Paragraphs -->
+            <p>
+                Outside of work, I'm an avid reader, delving into both novels and non-fiction to explore diverse perspectives. I also enjoy binge-watching shows that offer both entertainment and deeper insights into human nature. Crafting is another passion of mine, allowing me to express creativity and create unique items.
+            </p>
+
+            <p>
+                I'm passionate about giving back to my community and have a keen interest in volunteering with NGOs focused on supporting women and children.
+            </p>
+
+            <p>
+                Professionally, I've gained valuable experience in problem-solving and collaboration through diverse projects. While I'm still early in my career, I'm eager to expand my expertise and eventually lead impactful projects. My goal is to contribute meaningfully to projects that make a difference.
+            </p>
+
+            <!-- Circle Container -->
+            <div class="circle-container">
+                <!-- Circle 1 (Left) -->
+                <div class="circle">
+                    <p>
+                         I'm a creative and resilient individual with a passion for technology and innovation. My hardworking nature and determination drive me to overcome challenges and achieve my goals.
+                    </p>
+                </div>
+
+                <!-- Circle 2 (Center) -->
+                <div class="circle">
+                    <p>
+                        Collaboration and flexibility are among my strong suits, making me an excellent team player. I possess excellent people skills and pride myself on my ability to communicate effectively, lead teams, and listen attentively to understand and respect others' perspectives.
+                    </p>
+                </div>
+
+                <!-- Circle 3 (Right) -->
+                <div class="circle">
+                    <p>
+                        On the technical front, I'm proficient in languages like Java and Python, showcasing my versatility and adaptability. My skills in front-end development are evident from this very portfolio you're viewing. Additionally, I excel in data analytics and have a solid understanding of the basics of IoT.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Technical Skills and Certificates -->
+            <div class="tech-skills">Technical Skills and Certificates</div>
+
+            <!-- Skills -->
+            <div class="skills">
+                <div class="skill">Java</div>
+                <div class="skill">Python</div>
+                <div class="skill">Front-end</div>
+                <div class="skill">Data Analytics</div>
+                <div class="skill">IoT Basics</div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #8A6D67; /* lighter shade */
+            --primary-color-dark: #dab3b5; /* darker shade */
+            --secondary-color: #8A6D67; /* lighter shade */
+            --text-dark: black;
+            --text-light: #6b7280;
+            --extra-light: white;
+        }
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--extra-light);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: var(--extra-light);
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-light);
+        }
+
+        /* Contact Page */
+        .contact-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .contact-heading {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info div {
+            flex: 1;
+            background-color: var(--secondary-color);
+            padding: 1.5rem; /* Adjusted padding */
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .contact-info div::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(45deg, var(--primary-color), var(--primary-color-dark));
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .contact-info div h3 {
+            font-size: 1.2rem; /* Adjusted font size */
+            margin-bottom: 1rem;
+        }
+
+        .contact-info div p {
+            margin-bottom: 0.5rem; /* Adjusted margin */
+            font-size: 0.9rem; /* Adjusted font size */
+        }
+
+        .contact-form {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: left;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .contact-form button {
+            background-color: var(--primary-color);
+            color: var(--extra-light);
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--primary-color-dark);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="PROJECT.html">Home</a>
+        <a href="proabt.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <div class="contact-heading">Get in Touch</div>
+
+        <div class="contact-info">
+            <div>
+                <h3>Address</h3>
+                <p>Hyderabad, Ameerpet</p>
+                <p>DHFL building, 3rd floor</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p>vsswathireddy@gmail.com</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>9494386839</p>
+            </div>
+        </div>
+		<!-- ... -->
+
+<!-- Contact Form -->
+<div class="contact-form">
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="validateAndSendEmail()">Send</button>
+    </form>
+</div>
+
+<script>
+    function sendEmail() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        var subject = "New Contact from " + name;
+        var body = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+
+        window.open("mailto:vsswathireddy@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
+    }
+
+    function validateAndSendEmail() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // Regular expression for email validation
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (!emailRegex.test(email)) {
+            alert('Oops! Invalid email');
+            return;
+        }
+
+        sendEmail();
+    }
+</script>
+
+
+</body>
+
+</html>
